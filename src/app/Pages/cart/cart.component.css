@@ -1,0 +1,195 @@
+.Panier {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumbs p {
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #878787;
+}
+.breadcrumbs p:last-child {
+  color: #000000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container h3 {
+  text-align: center;
+}
+
+table{
+ width: 70%;
+ align-self: center;
+}
+table th {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+table th {
+  border-bottom: 2px solid #878787;
+  width: 100%;
+}
+table td,
+table tr {
+  padding: 10px;
+  text-align: center;
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+table td:first-child button {
+  border: none;
+  background-color: transparent;
+  background-image: url("../../../assets/X.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+table td:first-child button:hover {
+  background-image: url("../../../assets/redX.png");
+}
+table td:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+table td p {
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+table td .number-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table td .number-input button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  font-weight: 800;
+  color: black;
+}
+table td .number-input button:hover {
+  background-color: #e0e0e0;
+}
+table td .number-input input[type="number"] {
+  width: 30px;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  margin-right: -20px;
+}
+.buttons {
+  text-align: end;
+  margin-right: 250px;
+}
+.buttons button  ,.buttons a{
+  margin: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 170px;
+  height: 30px;
+  transform: 1.5s;
+  text-decoration: none;
+
+}
+.buttons a{
+  color: #1c5bff;
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+}
+.buttons a:hover {
+  border: 1px solid #1c5bff;
+}
+.buttons button {
+  color: white;
+  border: none;
+  background-color: #1c5bff;
+}
+.buttons button:hover {
+  background-color: #1c7bff;
+}
+.checkout {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin-right: 250px;
+}
+.checkout h5 {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.checkout .text {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: -10px;
+}
+.checkout .text p {
+  margin-top: 21px;
+}
+.checkout .items-list {
+  margin-bottom: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+.checkout button {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  width: 150px;
+  padding: 10px 10px;
+  align-self: center;
+}
+
+.checkout button:hover {
+  background-color: #0056b3;
+}

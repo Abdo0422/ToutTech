@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+          <li *ngFor="let category of categories">
+              <a (click)="onSelectCategory(category)"
+              [class.active]="isSelectedCategory(category)">
+                  {{ category.category }}
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="content" *ngIf="selectedCategory" >
+      <h2>{{ selectedCategory.category }}</h2>
+      <div *ngFor="let subcategory of selectedCategory.subcategories">
+          <h3>{{ subcategory.name }}</h3>
+          <ul>
+              <li *ngFor="let product of subcategory.products">
+                <a [routerLink]="['/product', product.id]">{{ product.title }}</a>
+              </li>
+          </ul>
+          <a [routerLink]="['/Category', selectedCategory.id, 'Subcategory', subcategory.id]">Voir Plus >>></a>
+      </div>
+  </div>
+</div>

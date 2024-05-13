@@ -1,0 +1,66 @@
+<div class="ProduitDetails">
+  <div class="breadcrumbs">
+    <p>Accueil</p><p> > </p><p>{{ categoryName }}</p><p> > </p><p>{{ subcategoryName }}</p><p> > </p><p>{{ product?.title }}</p>
+  </div>
+  <div class="Product">
+    <img [src]="product?.image" width="250px">
+    <div class="text">
+      <h2>{{ product?.title }}</h2>
+      <em>{{ subcategoryName }}</em>
+      <p>{{ product?.price }} Dhs</p>
+      <div class="buttons">
+        <div class="number-input">
+          <button (click)="decrease()">-</button>
+          <input type="number" [(ngModel)]="value" (ngModelChange)="value = value || 1" min="1">
+          <button (click)="increase()">+</button>
+        </div>
+        <button (click)="addToCart(product.id)" *ngIf="isLoggedIn(); else notLoggedIn" class="goodbutton">
+          <img src="../../assets/cart.png" alt="Add to Cart" class="img1">
+          <img src="../../assets/whitecart.png" alt="Add to Cart" class="img2">
+          Ajouter au Panier
+        </button>
+        <ng-template #notLoggedIn>
+          <button disabled class="disabled-button">
+            <img src="../../assets/cart.png" alt="Add to Cart" class="img1">
+            Ajouter au Panier
+          </button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="Description">
+    <div class="title">
+      <h3>Description</h3>
+      <div class="ligne"></div>
+      <p *ngFor="let desc of product?.description">
+        <span>{{desc}}</span><br>
+      </p>
+    </div>
+  </div>
+  <div class="Produitsimilaires">
+    <div class="title">
+      <h3>Produits similaires</h3>
+      <div class="ligne"></div>
+    </div>
+    <div class="listproducts">
+      <div *ngFor="let similarProduct of similarProducts" class="produit">
+        <a [routerLink]="['/product', similarProduct.id]">
+          <img [src]="similarProduct.image" width="180px">
+          <h4>{{ similarProduct.title }}</h4>
+          <p>{{ similarProduct.price }} Dhs</p>
+        </a>
+        <button (click)="addToCart(similarProduct.id)" *ngIf="isLoggedIn(); else notLoggedIn" class="goodbutton2">
+          <img src="../../assets/cart.png" alt="Add to Cart" class="img1" width="20px">
+          <img src="../../assets/whitecart.png" alt="Add to Cart" class="img2" width="20px">
+          Ajouter au Panier
+        </button>
+        <ng-template #notLoggedIn>
+          <button disabled class="disabled-button">
+            <img src="../../assets/cart.png" alt="Add to Cart" class="img1" width="20px">
+            Ajouter au Panier
+          </button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

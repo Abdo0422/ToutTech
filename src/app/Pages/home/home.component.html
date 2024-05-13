@@ -1,0 +1,92 @@
+<div class="homerosection">
+  <div class="banner"></div>
+  <div class="nouvel-arrivage">
+    <div class="title">
+      <h3>Nouvel Arrivage</h3>
+      <div class="ligne"></div>
+    </div>
+    <div class="slider-container">
+      <button
+        class="slider-button prev"
+        (click)="prevSlide(products)"
+        [disabled]="currentIndex === 0"
+      >
+        <img src="../../../assets/prev.png" width="30%" />
+      </button>
+      <div class="slider">
+        <div
+          class="slides-container"
+          [ngStyle]="{ transform: 'translateX(-' + currentIndex * 10 + 'px)' }"
+        >
+          <div class="slide" *ngFor="let product of displayedProducts">
+            <a [routerLink]="['/product', product.id]">
+              <div class="product" (click)="trackMouseOver(product.id)">
+                <div class="image-container">
+                  <img
+                    [src]="product.image"
+                    alt="{{ product.title }}"
+                    width="75%"
+                  />
+                </div>
+                <h3>{{ product.title }}</h3>
+                <p>{{ product.price }} <span>DHs</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="slider-button next"
+        (click)="nextSlide(products)"
+        [disabled]="currentIndex === products.length - 3"
+      >
+        <img src="../../../assets/next.png" width="30%" />
+      </button>
+    </div>
+  </div>
+
+  <div class="recommande">
+    <div class="title">
+      <h3>Recommendé pour vous</h3>
+      <div class="ligne2"></div>
+    </div>
+    <div class="slider-container">
+      <button
+        class="slider-button prev"
+        (click)="prevSlide(recommendedProducts)"
+        [disabled]="currentIndex === 0"
+      >
+        <img src="../../../assets/prev.png" width="30%" />
+      </button>
+      <div class="slider">
+        <div
+          class="slides-container"
+          [ngStyle]="{ transform: 'translateX(-' + currentIndex * 10 + 'px)' }"
+        >
+          <div class="slide" *ngFor="let product of recommendedProducts">
+            <a [routerLink]="['/product', product.id]">
+              <div class="product">
+                <div class="image-container">
+                  <img
+                    [src]="product.image"
+                    alt="{{ product.title }}"
+                    width="75%"
+                  />
+                </div>
+                <h3>{{ product.title }}</h3>
+                <p>{{ product.price }} <span>DHs</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="slider-button next"
+        (click)="nextSlide(recommendedProducts)"
+        [disabled]="currentIndex === recommendedProducts.length - 3"
+      >
+        <img src="../../../assets/next.png" width="30%" />
+      </button>
+    </div>
+  </div>
+</div>

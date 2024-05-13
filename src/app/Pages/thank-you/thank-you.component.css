@@ -1,0 +1,30 @@
+.thank-you {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.thank-you h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.thank-you p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.return-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.return-button:hover {
+  background-color: #0056b3;  
+}

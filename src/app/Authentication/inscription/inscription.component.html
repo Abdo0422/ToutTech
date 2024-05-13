@@ -1,0 +1,43 @@
+<div class="Compte">
+  <div class="breadcrumbs">
+    <p>Accueil</p><p> > </p><p>Mon Compte</p>
+  </div>
+  <div class="container">
+    <h3>Créer un compte</h3>
+    <form (ngSubmit)="register()">
+      <label>Username</label><br>
+      <input type="text" name="username" id="username" placeholder="User1" [(ngModel)]="newUser.username" required #username="ngModel"><br><br>
+      <div *ngIf="username.invalid && (username.dirty || username.touched)" class="error-message">
+        <p *ngIf="username.errors?.['required']">Veuillez entrer votre Nom.</p>
+      </div>
+      <label>E-mail</label><br>
+      <input type="email" name="email" id="email" placeholder="xyz@mail.com" [(ngModel)]="newUser.email" required #email="ngModel"><br><br>
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+        <p *ngIf="email.errors?.['required']">Veuillez entrer votre e-mail.</p>
+        <p *ngIf="email.errors?.['email']">E-mail invalide.</p>
+      </div>
+      <div *ngIf="emailExistsError" class="error-message">
+        <p>Email already exists. Please use another email.</p>
+      </div>
+      <label for="password">Mot de passe :</label><br>
+      <input type="password" [(ngModel)]="newUser.password" name="password" placeholder="fVzCT_v{3q'tGk[6uZ8#EP" id="password" required #password="ngModel"><br><br>
+      <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+        <p>Veuillez entrer votre mot de passe.</p>
+      </div>
+      <label for="confirmPassword">Confirmez le mot de passe :</label><br>
+      <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" id="confirmPassword"  placeholder="fVzCT_v{3q'tGk[6uZ8#EP" required #password="ngModel"><br><br>
+      <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+        <p>Veuillez entrer votre mot de passe.</p>
+      </div>
+      <p class="text_conf">Vos données personnelles seront utilisées pour soutenir votre expérience tout au long de ce site Web, pour gérer laccès à votre compte et à d'autres fins décrites dans notre politique de confidentialité.</p><br>
+      <div class="check">
+        <input type="checkbox" class="custom-checkbox" [(ngModel)]="checkboxChecked" name="checkbox" id="checkbox" #checkbox="ngModel" required>
+        <p>J'accepte les conditions générales de vente et la politique de confidentialité</p>
+      </div>
+      <div *ngIf="checkbox.invalid && (checkbox.dirty || checkbox.touched)" class="error-message">
+        <p *ngIf="checkbox.errors?.['required']">Vous devez accepter les conditions.</p>
+      </div>
+      <input type="submit" value="S’inscrire">
+    </form>
+  </div>
+</div>

@@ -1,0 +1,197 @@
+.Panier {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumbs p {
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #878787;
+}
+.breadcrumbs p:last-child {
+  color: #000000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container h3 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.both {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 170px;
+}
+.left {
+  float: left;
+  width: 40%;
+
+}
+.right {
+  float: right;
+  width: 40%;
+}
+.left .title,
+.right .title {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.left .title .ligne {
+  height: 3px;
+  background-color: #1c5bff;
+  width: 180px;
+  margin-top: -10px;
+  margin-left: 110px;
+}
+.right .title .ligne {
+  height: 3px;
+  background-color: #1c5bff;
+  width: 110px;
+  margin-top: -10px;
+  margin-left: 140px;
+}
+.left form {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.left form input,
+.left form textarea {
+  margin-bottom: 10px;
+  width: 230px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #fff6f6;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.left form input {
+  height: 30px;
+}
+.left form textarea {
+  height: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.left form input[type="submit"] {
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 10px;
+  border: none;
+  background-color: #1c5bff;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  cursor: pointer;
+}
+.left form input[type="submit"]:hover {
+  border: 1px solid #1c5bff;
+  color: #1c5bff;
+  background-color: white;
+}
+.right table {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.right table tr th {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.right table tr td  ,.right table tr div{
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14.5px;
+}
+.right .formulaire input {
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid black;
+  background-color: #fff6f6;
+}
+.right .confirmer {
+  width: 120px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #1c5bff;
+  color: white;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
+input.ng-invalid {
+  border-color: red;
+}
+
+button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+table form {
+  display: flex;
+  flex-direction: column;
+}
+
+table .formulaire{
+  display: flex;
+  flex-direction: column;
+}
+table .choice{
+ padding: 10px;
+
+}
+table input[type="text"]{
+  width: 150px;
+}
+.SUBMIT{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 300px;
+  align-self: center;
+  margin-top: 50px;
+  padding: 5px 10px;
+  border-radius: 15px;
+}

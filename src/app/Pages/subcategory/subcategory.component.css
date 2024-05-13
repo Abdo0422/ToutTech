@@ -1,0 +1,232 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumbs p {
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #878787;
+}
+.breadcrumbs p:last-child {
+  color: #000000;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+}
+.left h3{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.left .ligne{
+  background-color: #1C0EC8;
+  height: 1px;
+  width: 170px;
+  margin-top: -20px;
+}
+.left h4{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+.choices{
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+.choix {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+}
+input[type="radio"]{
+  display: none;
+}
+
+
+.choix .radio-circle {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1C0EC8;
+  border-radius: 50%;
+}
+
+
+.choix input:checked + .radio-circle::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #1C0EC8;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.choix label {
+  font-size: 16px;
+  cursor: pointer;
+}
+.choix input[type="checkbox"] {
+  display: none;
+}
+
+.choix .checkbox {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1C0EC8;
+  border-radius: 4px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.choix input[type="checkbox"]:checked + .checkbox {
+  background-color:  #1C0EC8;
+}
+
+.choix input[type="checkbox"] + label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.choix input[type="checkbox"] + label:before {
+  content: '\2714';
+  font-size: 5px;
+  color: transparent;
+}
+
+.choix input[type="checkbox"]:checked + label:before {
+  content: '';
+}
+.right span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 400px;
+}
+.right h3{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+.right .listproduits{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.right .produit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 20px;
+}
+.right .produit img{
+  width: 150px;
+ margin-left: 25px;
+}
+.right .produit a {
+  text-decoration: none;
+  color: #000000;
+}
+.right .produit h5 ,.right .produit p{
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  margin-top: 0px;
+  width: 220px;
+  text-align: center;
+}
+.right .produit .goodbutton{
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #1C5BFF ;
+  color: #1C5BFF;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.right .produit button .img1 {
+  width: 20px;
+}
+
+.right .produit button .img2 {
+  display: none;
+  width: 20px;
+}
+
+.right .produit .goodbutton:hover .img1 {
+  display: none;
+}
+
+.right .produit .goodbutton:hover .img2 {
+  display: block;
+}
+
+.right .produit .goodbutton:hover {
+  color: white;
+  border: none;
+  background-color: #1C5BFF;
+}
+
+.right .produit:hover{
+  border-radius: 15px;
+  border: 1px solid #1C5BFF ;
+}
+.disabled-button {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+  width: 180px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+}

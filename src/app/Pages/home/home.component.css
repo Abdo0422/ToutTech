@@ -1,0 +1,211 @@
+.banner {
+  background-image: url('../../../assets/herosection.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:flex-end;
+  color: white;
+  text-align: left;
+}
+
+
+.nouvel-arrivage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nouvel-arrivage .title {
+  margin-right: 500px;
+}
+
+.nouvel-arrivage .ligne {
+  border: none;
+  height: 5px;
+  background-color: #1C5BFF;
+  margin-top: -10px;
+  margin-left: 25px;
+  width: 120px;
+}
+
+.nouvel-arrivage .title h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.nouvel-arrivage .slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+.nouvel-arrivage .slider {
+  overflow: hidden;
+}
+
+.nouvel-arrivage .slides-container {
+  display: flex;
+  transition: transform 3s ease-in;
+}
+
+.nouvel-arrivage .slide {
+  flex: 0 0 auto;
+}
+
+.nouvel-arrivage .product {
+  padding: 20px;
+  padding-right: 10px;
+  text-align: center;
+  height: 300px;
+  overflow: hidden;
+
+}
+.nouvel-arrivage a{
+    text-decoration: none;
+    color: black;
+}
+.product:hover{
+  border: 1px solid #1C5BFF;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.nouvel-arrivage .product h3 , .nouvel-arrivage .product p {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.nouvel-arrivage .product span {
+  color: #1C5BFF;
+}
+
+.nouvel-arrivage .slider-button {
+  position: absolute;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nouvel-arrivage .slider-button:hover img {
+  transform: scale(1.1);
+}
+
+.nouvel-arrivage .prev {
+  left: 20%;
+}
+
+.nouvel-arrivage .next {
+  right: 20%;
+}
+
+.nouvel-arrivage .image-container {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.recommande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommande a{
+  text-decoration: none;
+  color: black;
+}
+.recommande .title {
+  margin-right: 500px;
+}
+
+.recommande .ligne2 {
+  border: none;
+  height: 5px;
+  background-color: #1C5BFF;
+  margin-top: -10px;
+  margin-left: 40px;
+  width: 170px;
+}
+
+.recommande .title h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.recommande .slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+.recommande .slider {
+  overflow: hidden;
+}
+
+.recommande .slides-container {
+  display: flex;
+  transition: transform 3s ease-in;
+}
+
+.recommande .slide {
+  flex: 0 0 auto;
+}
+
+.recommande .product {
+  padding: 20px;
+  padding-right: 10px;
+  text-align: center;
+  height: 300px;
+  overflow: hidden;
+}
+
+.recommande .product h3 , .recommande .product p {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.recommande .product span {
+  color: #1C5BFF;
+}
+
+.recommande .slider-button {
+  position: absolute;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.recommande .slider-button:hover img {
+  transform: scale(1.1);
+}
+
+.recommande .prev {
+  left: 20%;
+}
+
+.recommande .next {
+  right: 20%;
+}
+
+.recommande .image-container {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}

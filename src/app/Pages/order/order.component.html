@@ -1,0 +1,45 @@
+<div class="orders">
+  <h2>Orders</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Payment Method</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{ order.id }}</td>
+        <td>{{ order.userName }}</td>
+        <td>{{ order.userEmail }}</td>
+        <td>{{ order.address }}</td>
+        <td>{{ order.city }}</td>
+        <td>{{ order.country }}</td>
+        <td>Credit Card</td>
+        <td><button (click)="showCartItemDetails(order.cartItems)">View Cart Items</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div *ngIf="isPopupOpen" class="popup">
+  <div class="popup-content">
+    <button (click)="closePopup()">Close</button>
+    <h2>Cart Items</h2>
+    <ul>
+      <li *ngFor="let item of selectedCartItems">
+        <img [src]="item.image" width="100px">
+        <p>Name: {{ item.name }}</p>
+        <p>Price: {{ item.price }}</p>
+        <p>Quantity: {{ item.quantity }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

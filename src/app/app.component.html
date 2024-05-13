@@ -1,0 +1,127 @@
+<body>
+  <div class="navigation">
+    <nav>
+      <div class="top">
+        <div>
+          <a routerLink="/"
+            ><img src="./assets/logo.PNG" width="310px" height="100%"
+          /></a>
+        </div>
+        <div class="dropdown">
+          <input
+            type="text"
+            [(ngModel)]="searchTerm"
+            (input)="filterProducts()"
+            class="form-control dropdown-toggle"
+            data-toggle="dropdown"
+            placeholder="Search Products"
+          />
+          <div *ngIf="searchTerm !== ''">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div *ngIf="filteredProducts && filteredProducts.length > 0">
+                <div
+                  *ngFor="let product of filteredProducts"
+                  class="dropdown-item"
+                >
+                  <a [routerLink]="['/product', product.id]">
+                    <img
+                      [src]="product.image"
+                      alt="{{ product.title }}"
+                      width="100px"
+                    />
+                    <div class="Text">
+                      <h3>{{ product.title }}</h3>
+                      <p>Price: ${{ product.price }}</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                *ngIf="
+                  searchTerm &&
+                  (!filteredProducts || filteredProducts.length === 0)
+                "
+                class="dropdown-item disabled"
+              >
+                No products found.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="isLoggedIn(); else notLoggedIn" class="link">
+          <a style="margin-top: 30px; margin-right: -70px;">
+            <img src="./assets/user.png" />
+            <span>{{ loggedInUser?.username }}</span>
+          </a>
+          <div class="dropdown">
+            <a href="#" (click)="logout()">Déconnexion</a>
+            <ng-container *ngIf="loggedInUser?.role === 1">
+              <a routerLink="/Order">Orders</a>
+            </ng-container>
+          </div>
+        </div>
+        <ng-template #notLoggedIn>
+          <div class="link">
+            <a routerLink="/Connexion">
+              <img src="./assets/user.png" />
+              <span>Connexion</span>
+            </a>
+          </div>
+        </ng-template>
+
+        <div *ngIf="isLoggedIn(); else notLoggedIn2" class="link">
+          <a routerLink="/Cart">
+            <span class="notification">{{ itemCount }}</span>
+            <img src="./assets/shopping-basket.png" />
+            <span>Pannier</span>
+          </a>
+        </div>
+        <ng-template #notLoggedIn2>
+        <div class="link">
+          <a href="#" (click)="showPopup()">
+            <span class="notification">0</span>
+            <img src="./assets/shopping-basket.png" />
+            <span>Pannier</span>
+          </a>
+        </div>
+          <div *ngIf="isPopupVisible" class="popup-container" tabindex="0">
+            <div class="popup-content">
+              <p>You need to log in first.</p>
+              <button class="close-button" (click)="hidePopup()">Close</button>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <div class="bottom">
+        <ul>
+          <li *ngFor="let category of electronicsData" class="main-category">
+            <a [routerLink]="['/Category', category.id]" (click)="selectCategory(category)">
+              <div>
+                <img [src]="category.img1" width="30px" />
+                <img [src]="category.img2" width="30px" />
+              </div>
+              <span>{{ category.category }}</span>
+              <img src="./assets/down.png" width="10px" />
+            </a>
+            <ul class="contain">
+              <li *ngFor="let subcategory of category.subcategories" class="subcategory-products">
+                <a [routerLink]="['/Category', category.id, 'Subcategory', subcategory.id]">{{ subcategory.name }}</a>
+              </li>
+            </ul>
+          </li>
+
+          </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div *ngIf="showLoading" class="loading-overlay">
+      <div class="loading-spinner"></div>
+    </div>
+
+    <router-outlet></router-outlet>
+  </div>
+  <footer>
+    <div class="footer-bottom">&copy; 2024 Tout Tech</div>
+  </footer>
+</body>

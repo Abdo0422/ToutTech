@@ -1,0 +1,26 @@
+<div class="Compte">
+  <div class="breadcrumbs">
+    <p>Accueil</p><p> > </p><p>Mon Compte</p>
+  </div>
+  <div class="container">
+    <h3>Connectez-vous à votre compte</h3>
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <label>E-mail</label><br>
+      <input type="email" name="email" id="email" placeholder="yourxyz@mail.com" [(ngModel)]="user.email" required #email="ngModel"><br><br>
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+        <p *ngIf="email.errors?.['required']">Veuillez entrer votre e-mail.</p>
+        <p *ngIf="email.errors?.['email']">E-mail invalide.</p>
+      </div>
+      <label for="password">Mot de passe :</label><br>
+      <div class="input_list">
+        <input type="password" name="password" id="password" [(ngModel)]="user.password" placeholder="fVzCT_v{3q'tGk[6uZ8#EP" required #password="ngModel">
+        <a href="#">Oublié</a>
+      </div><br><br>
+      <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+        <p>Veuillez entrer votre mot de passe.</p>
+      </div>
+      <input type="submit" value="Connexion" [disabled]="loginForm.invalid">
+      <span><p>Vous n'avez pas de compte?</p><a href="/Inscription"> S'inscrire maintenant</a></span>
+    </form>
+  </div>
+</div>

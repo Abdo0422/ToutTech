@@ -1,0 +1,47 @@
+<div class="Panier">
+  <div class="breadcrumbs">
+    <p>Accueil</p> > <p>Panier</p>
+  </div>
+  <div class="container">
+    <h3>Panier</h3>
+    <table>
+      <tr>
+        <th>Produit</th>
+        <th>Prix</th>
+        <th>Quantité</th>
+        <th>Total</th>
+      </tr>
+      <tr *ngFor="let item of cartItems; let i = index">
+        <td>
+          <button (click)="deleteItem(i)"></button>
+          <img [src]="item.image" width="100px" alt="Product Image" style="padding-left: 10px; padding-right: 10px;">
+          <p>{{ item.name }}</p>
+        </td>
+        <td>{{ item.price }} Dhs</td>
+        <td>
+          <div class="number-input">
+            <button (click)="decrease(item)">-</button>
+            <input type="number" [(ngModel)]="item.quantity" min="1">
+            <button (click)="increase(item)">+</button>
+          </div>
+        </td>
+        <td>{{ calculateTotal(item) }} Dhs</td>
+      </tr>
+    </table>
+    <div class="buttons">
+      <a href="/">Continuer vos achats</a>
+      <button (click)=" updateCart()">Mettre à jour le panier</button>
+    </div>
+    <div class="checkout">
+      <div class="text">
+        <h4>SOUS TOTAL</h4>
+        <p>{{ calculateSubtotal() }} Dhs</p>
+      </div>
+      <h5>Produits:</h5>
+      <div *ngFor="let item of cartItems" class="items-list">
+            {{ item.name }} (x{{ item.quantity }})
+      </div>
+      <button (click)="validerCommande()">Valider la commande</button>
+    </div>
+  </div>
+</div>

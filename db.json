@@ -1,0 +1,615 @@
+{
+  "processPayment": [
+    {
+      "id": "723f",
+      "cardNumber": "5275278578578878",
+      "expiryDate": "12/25",
+      "cvv": "123"
+    },
+    {
+      "id": "4d89",
+      "cardNumber": "4234568524245325",
+      "expiryDate": "12/25",
+      "cvv": "123"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1713567014706",
+      "userId": "1713538656950",
+      "userName": "abderrahmane loubachi",
+      "userEmail": "mylifeasabdo@gmail.com",
+      "address": "157 LT LOTS AGDAL 1S M ETG RD APPT 1\nCASABLANCA",
+      "phoneNumber": "+212643449779",
+      "city": "CASABLANCA",
+      "country": "Maroc",
+      "cartItems": [
+        {
+          "id": "1713566995641",
+          "product_id": 3,
+          "name": "iPhone 13",
+          "price": 999,
+          "quantity": 3,
+          "image": "https://th.bing.com/th/id/OIP.2JfREDFMX96VodMXgG5zgAHaKE?rs=1&pid=ImgDetMain",
+          "user_id": "1713538656950"
+        }
+      ],
+      "paymentMethod": "",
+      "paymentDetails": null
+    },
+    {
+      "id": "1713567146889",
+      "userId": 1713567128146,
+      "userName": "aaaaaaaaaaaaa",
+      "userEmail": "abderrahmanelouybachi@gmail.com",
+      "address": "157 LT LOTS AGDAL 1S M ETG RD APPT 1\nCASABLANCA",
+      "phoneNumber": "+212643449779",
+      "city": "CASABLANCA",
+      "country": "Maroc",
+      "cartItems": [
+        {
+          "id": "1713567135464",
+          "product_id": 7,
+          "name": "Alienware Aurora",
+          "price": 1999,
+          "quantity": 2,
+          "image": "https://blogs.windows.com/wp-content/uploads/prod/sites/2/2019/08/36ae35d8ad1302d45f1452c64bd63fe3.jpg",
+          "user_id": 1713567128146
+        }
+      ],
+      "paymentMethod": "",
+      "paymentDetails": null
+    }
+  ],
+  "cartitems": [
+    {
+      "id": "1713517477486",
+      "product_id": 2,
+      "name": "Boîtier de Disque Dur Externe 2.5″HDD",
+      "price": 69,
+      "quantity": 1,
+      "image": "https://electro-market.ma/wp-content/uploads/2023/04/site-34-700x700.jpg",
+      "user_id": "1713486926242"
+    },
+    {
+      "id": "1713535174767",
+      "product_id": 12,
+      "name": "Phone Cases",
+      "price": 19.99,
+      "quantity": 2,
+      "image": "https://th.bing.com/th/id/OIP.ow57B6OlD6bkuKyIAbbMmAHaHZ?rs=1&pid=ImgDetMain",
+      "user_id": "1713525483721"
+    }
+  ],
+  "users": [
+    {
+      "id": "1713538656950",
+      "username": "abderrahmane loubachi",
+      "email": "mylifeasabdo@gmail.com",
+      "password": "12345678",
+      "role": 1
+    },
+    {
+      "id": "1713566407793",
+      "username": "azzaza",
+      "email": "jean@email.com",
+      "password": "12345678",
+      "role": 0
+    },
+    {
+      "id": "1713567128146",
+      "username": "aaaaaaaaaaaaa",
+      "email": "abderrahmanelouybachi@gmail.com",
+      "password": "12345678",
+      "role": 0
+    }
+  ],
+  "electronics": [
+    {
+      "id": "1",
+      "category": "Tendance",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Tendances Actuelles",
+          "products": [
+            {
+              "id": 1,
+              "id_cat": 1,
+              "id_subcat": 1,
+              "title": "MEETION K9320 Waterproof Backlit Gaming Keyboard",
+              "price": 129,
+              "quantity": 50,
+              "image": "https://http2.mlstatic.com/D_NQ_NP_760162-MLB46334256824_062021-F.jpg",
+              "description": [
+                "The MEETION K9320 is a high-performance gaming keyboard designed for enthusiasts.",
+                "It features waterproofing technology, ensuring durability and longevity.",
+                "With customizable backlit keys, users can personalize their gaming experience.",
+                "The ergonomic design provides comfort during long gaming sessions.",
+                "Built-in multimedia controls allow for easy access to volume and playback.",
+                "Compatible with Windows and Mac operating systems for versatility.",
+                "Constructed with high-quality materials for a premium feel and durability.",
+                "Perfect for gamers looking for a reliable and stylish keyboard.",
+                "Enhance your gaming setup with the MEETION K9320 gaming keyboard.",
+                "Elevate your gaming experience with this feature-packed keyboard."
+              ],
+              "date": "2024-04-10",
+              "clickcount": 0
+            },
+            {
+              "id": 2,
+              "id_cat": 1,
+              "id_subcat": 1,
+              "title": "Boîtier de Disque Dur Externe 2.5″HDD",
+              "price": 69,
+              "quantity": 30,
+              "image": "https://electro-market.ma/wp-content/uploads/2023/04/site-34-700x700.jpg",
+              "description": [
+                "Le Boîtier de Disque Dur Externe 2.5″HDD est une solution de stockage portable pratique.",
+                "Il permet de connecter facilement un disque dur externe à votre ordinateur.",
+                "Avec une interface USB 3.0, les transferts de données sont rapides et efficaces.",
+                "Le boîtier est compatible avec les disques durs SATA de 2,5 pouces.",
+                "Sa conception légère et compacte le rend idéal pour une utilisation en déplacement.",
+                "Le boîtier en aluminium offre une protection supplémentaire à votre disque dur.",
+                "Parfait pour sauvegarder vos fichiers, documents et médias importants.",
+                "Facile à installer et à utiliser, aucune installation de pilote requise.",
+                "Protégez vos données avec ce boîtier de disque dur externe fiable et abordable.",
+                "Stockez, sauvegardez et transportez vos fichiers en toute sécurité avec ce boîtier de disque dur externe."
+              ],
+              "date": "2024-04-08",
+              "clickcount": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "category": "S&T",
+      "img1": "./assets/tablet.png",
+      "img2": "./assets/smartphone.png",
+      "subcategories": [
+        {
+          "id": 2,
+          "name": "Smartphones",
+          "products": [
+            {
+              "id": 3,
+              "id_cat": 2,
+              "id_subcat": 2,
+              "title": "iPhone 13",
+              "price": 999,
+              "quantity": 100,
+              "image": "https://th.bing.com/th/id/OIP.2JfREDFMX96VodMXgG5zgAHaKE?rs=1&pid=ImgDetMain",
+              "description": [
+                "The iPhone 13 is Apple's latest flagship smartphone, offering cutting-edge technology and features.",
+                "Featuring a stunning Super Retina XDR display, images and videos come to life with vibrant colors and deep blacks.",
+                "Powered by the A15 Bionic chip, the iPhone 13 delivers blazing-fast performance and efficiency.",
+                "The dual-camera system captures stunning photos and videos in any lighting condition.",
+                "With 5G connectivity, you can download and stream content at incredible speeds.",
+                "The iPhone 13 boasts all-day battery life, so you can stay connected and productive for longer.",
+                "Face ID provides secure authentication and effortless unlocking of your device.",
+                "Available in a range of colors and storage capacities to suit your style and needs.",
+                "Experience the future of smartphones with the iPhone 13.",
+                "Elevate your mobile experience with the powerful and feature-packed iPhone 13."
+              ],
+              "date": "2024-04-09",
+              "clickcount": 0
+            },
+            {
+              "id": 4,
+              "id_cat": 2,
+              "id_subcat": 2,
+              "title": "Samsung Galaxy S21",
+              "price": 899,
+              "quantity": 0,
+              "image": "https://th.bing.com/th/id/OIP.bX8ZjLqVsvIXtFKUP5O3TQHaJQ?rs=1&pid=ImgDetMain",
+              "description": [
+                "The Samsung Galaxy S21 is a powerful and stylish Android smartphone with premium features.",
+                "Featuring a stunning Dynamic AMOLED display, the Galaxy S21 offers vibrant colors and deep blacks.",
+                "Powered by the Exynos 2100 chipset, the Galaxy S21 delivers smooth performance and multitasking.",
+                "The triple-camera system captures stunning photos and videos with ease.",
+                "With 5G connectivity, you can download and stream content at lightning-fast speeds.",
+                "The Galaxy S21 features a sleek and ergonomic design that feels great in the hand.",
+                "With all-day battery life and fast charging capabilities, you can stay connected on the go.",
+                "Experience the latest Android features and innovations with the Samsung Galaxy S21.",
+                "Available in a range of colors and storage options to suit your style and needs.",
+                "Get ready to elevate your smartphone experience with the Samsung Galaxy S21."
+              ],
+              "date": "2024-04-07",
+              "clickcount": 0
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Tablets",
+          "products": [
+            {
+              "id": 5,
+              "id_cat": 2,
+              "id_subcat": 3,
+              "title": "iPad Pro",
+              "price": 799,
+              "quantity": 60,
+              "image": "https://th.bing.com/th/id/OIP.wrtqF0x7buCkgzORKFZ-_wHaHa?rs=1&pid=ImgDetMain",
+              "description": [
+                "The iPad Pro is Apple's most powerful and versatile tablet yet, designed for productivity and creativity.",
+                "Featuring a stunning Liquid Retina display, the iPad Pro offers crisp and vibrant visuals.",
+                "With support for the Apple Pencil and Magic Keyboard, the iPad Pro is perfect for productivity and creativity.",
+                "The dual-camera system captures stunning photos and videos, while the LiDAR scanner enables immersive augmented reality experiences.",
+                "With 5G connectivity, you can download, stream, and game at incredible speeds.",
+                "The iPad Pro boasts all-day battery life, so you can work and play for longer.",
+                "Face ID provides secure authentication and effortless unlocking of your device.",
+                "Available in a range of sizes and storage capacities to suit your needs.",
+                "Experience the future of computing with the powerful and versatile iPad Pro.",
+                "Elevate your productivity and creativity with the iPad Pro."
+              ],
+              "date": "2024-04-06",
+              "clickcount": 0
+            },
+            {
+              "id": 6,
+              "id_cat": 2,
+              "id_subcat": 3,
+              "title": "Samsung Galaxy Tab S7",
+              "price": 649,
+              "quantity": 70,
+              "image": "https://th.bing.com/th/id/OIP.SvWqMUNLJkrcGBn2LhQvkQHaGk?rs=1&pid=ImgDetMain",
+              "description": [
+                "The Samsung Galaxy Tab S7 is a premium Android tablet with a sleek design and powerful features.",
+                "Featuring a stunning Super AMOLED display, the Galaxy Tab S7 delivers crisp and vibrant visuals.",
+                "Powered by the Snapdragon 865+ chipset, the Galaxy Tab S7 offers smooth performance and multitasking.",
+                "The included S Pen stylus provides a natural writing and drawing experience, perfect for note-taking and creative tasks.",
+                "With the optional Book Cover Keyboard, the Galaxy Tab S7 transforms into a powerful laptop replacement.",
+                "The dual-camera system captures stunning photos and videos, while the quad-speaker setup delivers immersive audio.",
+                "With DeX mode, you can enjoy a desktop-like experience for productivity and multitasking.",
+                "The Galaxy Tab S7 features a long-lasting battery, so you can work and play for longer.",
+                "Available in a range of colors and storage options to suit your style and needs.",
+                "Experience the best of Android with the Samsung Galaxy Tab S7."
+              ],
+              "date": "2024-04-05",
+              "clickcount": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "category": "O&P",
+      "img1": "./assets/computer.png",
+      "img2": "./assets/laptop.png",
+      "subcategories": [
+        {
+          "id": 4,
+          "name": "Ordinateurs",
+          "products": [
+            {
+              "id": 7,
+              "id_cat": 3,
+              "id_subcat": 4,
+              "title": "Alienware Aurora",
+              "price": 1999,
+              "quantity": 20,
+              "image": "https://blogs.windows.com/wp-content/uploads/prod/sites/2/2019/08/36ae35d8ad1302d45f1452c64bd63fe3.jpg",
+              "description": [
+                "The Alienware Aurora is a high-performance gaming desktop designed for enthusiasts and professionals.",
+                "Featuring a sleek and futuristic design, the Aurora stands out from the crowd.",
+                "Powered by the latest Intel Core processors and NVIDIA GeForce graphics cards, the Aurora delivers unmatched performance and graphics.",
+                "The Aurora's unique chassis design allows for easy upgrades and customization.",
+                "With Alienware Command Center, you can personalize your gaming experience and optimize system performance.",
+                "The Alienware Aurora features customizable RGB lighting for a personalized look and feel.",
+                "Designed for immersive gaming experiences, the Aurora is VR-ready and supports high-refresh-rate monitors.",
+                "The Alienware Aurora is the ultimate gaming desktop for serious gamers and content creators.",
+                "Take your gaming to the next level with the Alienware Aurora.",
+                "Experience unparalleled performance and style with the Alienware Aurora gaming desktop."
+              ],
+              "date": "2024-04-04",
+              "clickcount": 0
+            },
+            {
+              "id": 8,
+              "id_cat": 3,
+              "id_subcat": 4,
+              "title": "HP Pavilion",
+              "price": 899,
+              "quantity": 30,
+              "image": "https://th.bing.com/th/id/R.25b161a4fbb308cdcb24718a0f27fa10?rik=gFZF%2bKCniV7A0w&riu=http%3a%2f%2f3.bp.blogspot.com%2f-2xRJvN1ikV8%2fUK0Ln5OQVdI%2fAAAAAAAAANk%2fs0ojMrNZfz4%2fs1600%2fHP%2bPavilion%2bP6-2390%2bDesktop%2b3.jpg&ehk=u%2fIfqfv32GVnk2Mqm3WSHXZ1OELtd3j0m8FZyKspW3Y%3d&risl=&pid=ImgRaw&r=0",
+              "description": [
+                "The HP Pavilion is a versatile and affordable desktop PC suitable for home and office use.",
+                "Featuring a compact and stylish design, the Pavilion fits seamlessly into any environment.",
+                "Powered by AMD Ryzen processors, the Pavilion delivers reliable performance for everyday tasks.",
+                "With plenty of storage and memory options, you can customize the Pavilion to suit your needs.",
+                "The Pavilion features a range of connectivity options, including USB, HDMI, and Ethernet ports.",
+                "With Windows 10 pre-installed, you can get up and running in no time.",
+                "The HP Pavilion is designed for ease of use, with tool-less access for easy upgrades and maintenance.",
+                "With HP Fast Charge technology, you can recharge your devices in no time.",
+                "Available in a range of configurations to suit your budget and requirements.",
+                "Get reliable performance and value with the HP Pavilion desktop PC."
+              ],
+              "date": "2024-04-03",
+              "clickcount": 0
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Pc Portable",
+          "products": [
+            {
+              "id": 9,
+              "id_cat": 3,
+              "id_subcat": 5,
+              "title": "MacBook Pro",
+              "price": 1299,
+              "quantity": 25,
+              "image": "https://laptopmedia.com/wp-content/uploads/2017/06/macbook_pro_13_a_1143_0_0.jpg",
+              "description": [
+                "The MacBook Pro is Apple's flagship laptop, offering unmatched performance and versatility.",
+                "Featuring a stunning Retina display, the MacBook Pro delivers crisp and vibrant visuals.",
+                "Powered by the latest Intel Core processors, the MacBook Pro offers blazing-fast performance for demanding tasks.",
+                "With up to 32GB of RAM and 4TB of SSD storage, the MacBook Pro can handle even the most demanding workloads.",
+                "The Magic Keyboard provides a comfortable and responsive typing experience, perfect for long typing sessions.",
+                "The MacBook Pro features a sleek and lightweight design, making it ideal for professionals on the go.",
+                "With macOS Catalina, you can enjoy a seamless and intuitive computing experience.",
+                "The MacBook Pro is equipped with Thunderbolt 3 ports for fast data transfer and connectivity.",
+                "Available in a range of screen sizes and configurations to suit your needs and budget.",
+                "Experience the power and performance of the MacBook Pro."
+              ],
+              "date": "2024-04-02",
+              "clickcount": 0
+            },
+            {
+              "id": 10,
+              "id_cat": 3,
+              "id_subcat": 5,
+              "title": "Dell XPS 13",
+              "price": 1199,
+              "quantity": 35,
+              "image": "https://th.bing.com/th/id/OIP.HSeZtvqnBaxtEYH0dev5XQHaEK?rs=1&pid=ImgDetMain",
+              "description": [
+                "The Dell XPS 13 is a premium ultrabook designed for performance and portability.",
+                "Featuring a stunning InfinityEdge display, the XPS 13 offers an immersive viewing experience with virtually no bezels.",
+                "Powered by Intel Core processors, the XPS 13 delivers fast and responsive performance for productivity and multitasking.",
+                "With up to 32GB of RAM and 2TB of SSD storage, the XPS 13 can handle even the most demanding tasks with ease.",
+                "The XPS 13 features a sleek and lightweight design, making it perfect for professionals on the go.",
+                "With Dell Mobile Connect, you can seamlessly integrate your smartphone with your PC for enhanced productivity.",
+                "The XPS 13 boasts all-day battery life, so you can work and play for longer without needing to recharge.",
+                "Experience the best of Windows 10 with the Dell XPS 13.",
+                "Available in a range of configurations and finishes to suit your style and needs.",
+                "Elevate your computing experience with the Dell XPS 13 ultrabook."
+              ],
+              "date": "2024-04-01",
+              "clickcount": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "category": "A&T",
+      "img1": "./assets/keyboard-and-mouse.png",
+      "img2": "./assets/usb.png",
+      "subcategories": [
+        {
+          "id": 6,
+          "name": "Accessoires",
+          "products": [
+            {
+              "id": 11,
+              "id_cat": 4,
+              "id_subcat": 6,
+              "title": "Wireless Earbuds",
+              "price": 49.99,
+              "quantity": 40,
+              "image": "https://images-na.ssl-images-amazon.com/images/I/61sS4cwivkL.jpg",
+              "description": [
+                "Wireless Earbuds offer a convenient and stylish way to enjoy your favorite music and podcasts on the go.",
+                "Featuring Bluetooth connectivity, these earbuds are compatible with a wide range of devices, including smartphones, tablets, and laptops.",
+                "With ergonomic ear tips and a lightweight design, these earbuds are comfortable to wear for extended periods.",
+                "The included charging case provides up to 20 hours of playtime on a single charge, so you can enjoy uninterrupted music wherever you go.",
+                "The built-in microphone allows for hands-free calling, making these earbuds perfect for use during workouts or while driving.",
+                "Available in a range of colors and styles to suit your personal preferences.",
+                "Enjoy crystal-clear sound quality with these premium wireless earbuds.",
+                "Upgrade your audio experience with Wireless Earbuds.",
+                "Experience the freedom of wireless listening with these stylish and comfortable earbuds.",
+                "Get ready to enjoy your favorite music and podcasts wherever you go with Wireless Earbuds."
+              ],
+              "date": "2024-03-31",
+              "clickcount": 1
+            },
+            {
+              "id": 12,
+              "id_cat": 4,
+              "id_subcat": 6,
+              "title": "Phone Cases",
+              "price": 19.99,
+              "quantity": 60,
+              "image": "https://th.bing.com/th/id/OIP.ow57B6OlD6bkuKyIAbbMmAHaHZ?rs=1&pid=ImgDetMain",
+              "description": [
+                "Phone Cases offer stylish and durable protection for your smartphone, keeping it safe from scratches, drops, and other damage.",
+                "Constructed from high-quality materials, these cases are designed to withstand daily wear and tear.",
+                "With a slim and lightweight design, these cases won't add extra bulk to your device, allowing for easy portability and use.",
+                "The precise cutouts provide access to all ports, buttons, and features, ensuring full functionality of your device.",
+                "Available in a range of colors and designs to suit your personal style and preferences.",
+                "Protect your investment with these stylish and affordable phone cases.",
+                "Keep your smartphone safe and secure with Phone Cases.",
+                "Upgrade your device's protection with these premium phone cases.",
+                "Experience peace of mind knowing your smartphone is protected with Phone Cases.",
+                "Get ready to take your device to the next level with these stylish and functional phone cases."
+              ],
+              "date": "2024-03-30",
+              "clickcount": 2
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Gadgets",
+          "products": [
+            {
+              "id": 13,
+              "id_cat": 4,
+              "id_subcat": 7,
+              "title": "Smartwatch",
+              "price": 129.99,
+              "quantity": 50,
+              "image": "https://www.amazon.in/images/I/6113mS%2BxhyL._SL1500_.jpg",
+              "description": [
+                "Smartwatch offers a convenient and stylish way to stay connected and track your health and fitness goals.",
+                "Featuring a vibrant touchscreen display, this smartwatch provides easy access to notifications, calls, and apps.",
+                "With built-in activity tracking and heart rate monitoring, you can keep tabs on your health and fitness goals in real time.",
+                "The waterproof design means you can wear this smartwatch in the pool or shower without worry.",
+                "The long-lasting battery provides up to 7 days of use on a single charge, so you can stay connected all week long.",
+                "Available in a range of colors and styles to suit your personal preferences.",
+                "Stay connected and track your health and fitness goals with Smartwatch.",
+                "Upgrade your wrist with this stylish and functional smartwatch.",
+                "Experience the convenience and style of Smartwatch.",
+                "Get ready to take control of your health and stay connected with Smartwatch."
+              ],
+              "date": "2024-03-29",
+              "clickcount": 3
+            },
+            {
+              "id": 14,
+              "id_cat": 4,
+              "id_subcat": 7,
+              "title": "Portable Charger",
+              "price": 39.99,
+              "quantity": 70,
+              "image": "https://th.bing.com/th/id/R.7f6598115da9f846360154961d14d88c?rik=x79oMJKJogx2lw&pid=ImgRaw&r=0",
+              "description": [
+                "Portable Charger offers a convenient and reliable way to keep your devices powered up on the go.",
+                "Featuring a compact and lightweight design, this portable charger easily fits in your bag or pocket for easy portability.",
+                "With fast charging technology, this portable charger can quickly recharge your devices, so you never have to worry about running out of power.",
+                "The high-capacity battery provides multiple charges for most smartphones, tablets, and other USB-powered devices.",
+                "The built-in LED indicator lights let you know how much battery life is left, so you can recharge the charger as needed.",
+                "Available in a range of capacities and styles to suit your needs and preferences.",
+                "Stay powered up and connected wherever you go with Portable Charger.",
+                "Upgrade your charging setup with this reliable and convenient portable charger.",
+                "Experience peace of mind knowing your devices are always charged and ready with Portable Charger.",
+                "Get ready to stay connected and powered up on the go with Portable Charger."
+              ],
+              "date": "2024-03-28",
+              "clickcount": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "category": "A&V",
+      "img1": "./assets/audio-book.png",
+      "img2": "./assets/media.png",
+      "subcategories": [
+        {
+          "id": 8,
+          "name": "Audio",
+          "products": [
+            {
+              "id": 15,
+              "id_cat": 5,
+              "id_subcat": 8,
+              "title": "Headphones",
+              "price": 99.99,
+              "quantity": 80,
+              "image": "https://th.bing.com/th/id/R.c302f932594bb77e5dc1fec118003d83?rik=VHXvfuSxTAZb3Q&pid=ImgRaw&r=0",
+              "description": [
+                "Immerse yourself in your favorite music with these high-quality headphones.",
+                "Featuring noise-canceling technology, these headphones block out background noise for a more immersive listening experience.",
+                "With a lightweight and comfortable design, these headphones are perfect for long listening sessions.",
+                "The adjustable headband and cushioned ear cups ensure a comfortable fit for all head sizes.",
+                "Available in a range of colors and styles to suit your personal preferences.",
+                "Experience crystal-clear audio with these premium headphones.",
+                "Get ready to enjoy your favorite music in style with these sleek and stylish headphones.",
+                "Upgrade your audio experience with these high-performance headphones.",
+                "Experience the ultimate in comfort and sound quality with these premium headphones.",
+                "Get ready to take your music to the next level with these stylish and comfortable headphones."
+              ],
+              "date": "2024-03-27",
+              "clickcount": 0
+            },
+            {
+              "id": 16,
+              "id_cat": 5,
+              "id_subcat": 8,
+              "title": "Bluetooth Speakers",
+              "price": 79.99,
+              "quantity": 90,
+              "image": "https://th.bing.com/th/id/R.2d27478aeea50a29523264539f471323?rik=UqD3Ep04SyelLA&riu=http%3a%2f%2fwww.designbolts.com%2fwp-content%2fuploads%2f2018%2f03%2fJBL-Flip-3-Splashproof-Portable-Bluetooth-Speaker.jpg&ehk=Tj2Smo2jWyxU%2fSZE8HhSqh3CqGMpysguYA2HKcLWV7s%3d&risl=&pid=ImgRaw&r=0",
+              "description": [
+                "Take your music on the go with these portable Bluetooth speakers.",
+                "Featuring a compact and lightweight design, these speakers are perfect for outdoor adventures, parties, and more.",
+                "With wireless Bluetooth connectivity, you can easily stream music from your smartphone, tablet, or other Bluetooth-enabled devices.",
+                "The built-in rechargeable battery provides up to 12 hours of playtime on a single charge, so you can keep the music going all day long.",
+                "The splash-proof design means you can use these speakers by the pool or at the beach without worry.",
+                "Available in a range of colors and designs to suit your personal style and preferences.",
+                "Experience powerful sound and impressive bass with these Bluetooth speakers.",
+                "Get ready to turn any gathering into a party with these portable Bluetooth speakers.",
+                "Upgrade your audio setup with these high-quality Bluetooth speakers.",
+                "Take your music wherever you go with these stylish and portable speakers."
+              ],
+              "date": "2024-03-26",
+              "clickcount": 0
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Visuels",
+          "products": [
+            {
+              "id": 17,
+              "id_cat": 5,
+              "id_subcat": 9,
+              "title": "4K TV",
+              "price": 899,
+              "quantity": 30,
+              "image": "https://i0.wp.com/tvreviewland.com/wp-content/uploads/2018/12/lg-65-inch-tv-2.jpg?fit=1500,1340&ssl=1",
+              "description": [
+                "Experience stunning picture quality with this 4K TV.",
+                "Featuring a large and vibrant display, this TV delivers lifelike images with incredible detail and clarity.",
+                "With HDR technology, you'll enjoy enhanced contrast and color for a more immersive viewing experience.",
+                "The smart TV functionality allows you to stream your favorite movies, TV shows, and more from popular apps like Netflix, Hulu, and Amazon Prime Video.",
+                "The sleek and modern design adds a touch of elegance to any room.",
+                "Available in a range of screen sizes to suit your space and viewing preferences.",
+                "Experience the future of television with this state-of-the-art 4K TV.",
+                "Get ready to enjoy your favorite content in stunning detail with this high-performance TV.",
+                "Upgrade your home entertainment experience with this premium 4K TV.",
+                "Immerse yourself in the action with this immersive and feature-rich 4K TV."
+              ],
+              "date": "2024-03-25",
+              "clickcount": 0
+            },
+            {
+              "id": 18,
+              "id_cat": 5,
+              "id_subcat": 9,
+              "title": "Projector",
+              "price": 599,
+              "quantity": 25,
+              "image": "https://th.bing.com/th/id/OIP.bi0UBoso_eBzIJD3YoISIwHaHa?rs=1&pid=ImgDetMain",
+              "description": [
+                "Transform any room into a home theater with this high-quality projector.",
+                "Featuring a compact and lightweight design, this projector is easy to set up and use, making it perfect for movie nights, gaming, and more.",
+                "With Full HD resolution and 3000 lumens of brightness, you'll enjoy crisp and clear images even in well-lit environments.",
+                "The built-in speaker delivers powerful sound without the need for external speakers.",
+                "Connect your favorite devices via HDMI, USB, or wireless streaming for easy access to your favorite content.",
+                "The portable design makes it easy to take this projector with you wherever you go.",
+                "Experience the magic of the big screen in the comfort of your own home with this versatile projector.",
+                "Get ready to enjoy immersive movie nights and gaming sessions with this high-performance projector.",
+                "Upgrade your home entertainment setup with this feature-packed projector.",
+                "Create unforgettable movie nights and gaming experiences with this top-of-the-line projector."
+              ],
+              "date": "2024-03-24",
+              "clickcount": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

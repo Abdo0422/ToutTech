@@ -1,0 +1,66 @@
+<div class="Categoriesection">
+  <div class="breadcrumbs">
+    <p>Accueil</p><p> > </p><p>{{ categoryName }}</p><p> > </p><p>{{ subcategoryName }}</p>
+  </div>
+  <div class="container">
+    <div class="left">
+      <h3>Filtrer</h3>
+      <div class="ligne"></div>
+      <div class="choices">
+      <h4>Prix</h4>
+<div class="choix">
+  <input type="radio" name="choix" id="plusCher" [checked]="plusCherSelected" (change)="selectOption('plusCher')">
+  <span class="radio-circle"></span>
+  <label for="plusCher">Plus Cher</label>
+</div>
+<div class="choix">
+  <input type="radio" name="choix" id="moinsCher" [checked]="moinsCherSelected" (change)="selectOption('moinsCher')">
+  <span class="radio-circle"></span>
+  <label for="moinsCher">Moins Cher</label>
+</div>
+<div class="choix">
+  <input type="radio" name="choix" id="none" style="display: none;" [checked]="!plusCherSelected && !moinsCherSelected" (change)="selectOption('none')">
+</div>
+
+<h4>Disponibilité en stock</h4>
+<div class="choix">
+  <input type="checkbox" id="enStock" [checked]="enStockSelected" #enStockCheckbox (change)="toggleStockFilter('enStock', enStockCheckbox.checked)">
+  <span class="checkbox"></span>
+  <label for="enStock">En Stock</label>
+</div>
+<div class="choix">
+  <input type="checkbox" id="epuise" [checked]="epuiseSelected" #epuiseCheckbox (change)="toggleStockFilter('epuise', epuiseCheckbox.checked)">
+  <span class="checkbox"></span>
+  <label for="epuise">Epuisé</label>
+</div>
+
+</div>
+    </div>
+    <div class="right">
+      <span>
+        <h3>{{ subcategoryName }}</h3>
+        <p>{{ products.length }} Résultats</p>
+      </span>
+      <div class="listproduits">
+        <div class="produit" *ngFor="let product of products" >
+          <a [routerLink]="['/product', product.id]">
+          <img [src]="product.image" alt="{{ product.title }}">
+          <h5>{{ product.title }}</h5>
+          <p>{{ product.price }} Dhs</p>
+          </a>
+          <button (click)="addToCart(product.id)" *ngIf="isLoggedIn(); else notLoggedIn" class="goodbutton">
+            <img src="../../assets/cart.png" alt="Add to Cart" class="img1">
+            <img src="../../assets/whitecart.png" alt="Add to Cart" class="img2">
+            Ajouter au Panier
+          </button>
+          <ng-template #notLoggedIn>
+            <button disabled class="disabled-button">
+              <img src="../../assets/cart.png" alt="Add to Cart" class="img1">
+              Ajouter au Panier
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

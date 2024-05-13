@@ -1,0 +1,289 @@
+.ProduitDetails {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumbs p {
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #878787;
+}
+.breadcrumbs p:last-child {
+  color: #000000;
+}
+.Product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  margin-left: 20px;
+}
+.text h2 {
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text em {
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #878787;
+}
+.text p {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons .number-input {
+  display: flex;
+  align-items: center;
+}
+
+.buttons .number-input button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  font-weight: 800;
+  color: black;
+}
+
+.buttons .number-input button:hover {
+  background-color: #e0e0e0;
+}
+
+.buttons .number-input input[type="number"] {
+  width: 30px;
+  text-align: center;
+  border: none;
+  padding: 5px;
+}
+
+.buttons .goodbutton {
+  display: flex;
+  width: 215px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1c5bff;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+}
+.buttons .goodbutton .img2 ,.buttons .disabled-button .img1{
+  width: 20px;
+}
+.buttons .goodbutton .img1 {
+  display: none;
+  width: 20px;
+}
+.buttons .goodbutton:hover .img2 {
+  display: none;
+}
+
+.buttons .goodbutton:hover .img1 {
+  display: block;
+}
+.buttons .goodbutton:hover {
+  background-color: #1c8eff;
+}
+.buttons .disabled-button{
+  display: flex;
+  width: 215px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ccc;
+  color: #999;
+  border-radius: 20px;
+  border: none;
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Description .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.Description .title .ligne {
+  height: 3px;
+  background-color: #1c5bff;
+  width: 80px;
+  margin-top: -10px;
+  margin-right: 700px;
+
+}
+
+.Description .title p,
+.Description .title .ligne
+.Description .title h3 {
+  text-align: start;
+  padding-left: 20px;
+
+}
+.Description .title p,
+.Description .title h3 {
+  width: 800px;
+}
+
+.Description .title p span::before {
+  content: "• ";
+  color: #1c5bff;
+  display: block;
+  float: left;
+  margin-left: -1em;
+}
+.Produitsimilaires .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.Produitsimilaires .title .ligne {
+  height: 3px;
+  background-color: #1c5bff;
+  width: 140px;
+  margin-top: -10px;
+  margin-right: 640px;
+
+}
+
+.Produitsimilaires .title p,
+.Produitsimilaires .title .ligne
+.Produitsimilaires .title h3 {
+  text-align: start;
+  padding-left: 20px;
+
+}
+.Produitsimilaires .title p,
+.Produitsimilaires .title h3 {
+  width: 800px;
+}
+.Produitsimilaires .listproducts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Produitsimilaires .listproducts .produit:hover{
+  border-radius: 15px;
+  border: 1px solid #1C5BFF ;
+}
+.Produitsimilaires .listproducts .produit,
+.Produitsimilaires .listproducts .produit a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+  transition: 1.5s;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+}
+.Produitsimilaires .listproducts .produit h4 {
+  margin-bottom: -25px;
+}
+.Produitsimilaires .listproducts .produit h4,
+.Produitsimilaires .listproducts .produit p {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+.Produitsimilaires .listproducts .produit .goodbutton2 {
+  display: flex;
+  width: 115;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  color: #1c5bff;
+  border-radius: 20px;
+  border: 1px solid #1c5bff;
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Produitsimilaires .listproducts .produit.goodbutton2 .img2 {
+  display: none;
+  position: absolute;
+
+}
+.Produitsimilaires .listproducts .produit .goodbutton2:hover .img1 {
+  display: none;
+}
+
+.Produitsimilaires .listproducts .produit .goodbutton2:hover .img2 {
+  display: block;
+}
+.Produitsimilaires .listproducts .produit .goodbutton2:hover{
+  background-color: #1c5bff;
+  color:white ;
+}
+.Produitsimilaires .listproducts .produit .disabled-button{
+  display: flex;
+  width: 115;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ccc;
+  color: #999;
+  border-radius: 20px;
+  border: 1px solid #999;
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}

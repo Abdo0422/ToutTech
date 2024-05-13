@@ -1,0 +1,175 @@
+.Compte {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumbs p {
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #878787;
+}
+.breadcrumbs p:last-child {
+  color: #000000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-top: 2%;
+  padding: 1% 10%;
+}
+.container h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.container form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+}
+.container form label {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 280px;
+}
+.container form input[type="text"],
+.container form input[type="password"],
+.container form input[type="email"] {
+  width: 315px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  height: 30px;
+  background-color: #fff6f6;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  align-self: center;
+}
+.container form .check {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  align-self: center;
+}
+.container form .text_conf {
+  margin-left: 20px;
+  margin-top: -7px;
+  margin-bottom: -17px;
+  color: #868686;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  width: 400px;
+  align-self: center;
+}
+.container form .check p {
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  width: 350px;
+}
+.container form input[type="submit"] {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 250px;
+  height: 35px;
+  font-size: 20px;
+  background-color: #2d68ff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-left: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+  align-self: center;
+}
+.container form input[type="submit"]:hover {
+  background-color: white;
+  color: #2d68ff;
+}
+
+.error-message {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+  font-size: 14px;
+  margin-top: -25px;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .container form label {
+    margin-left: 0;
+    text-align: center; 
+  }
+
+  .container form input[type="text"],
+  .container form input[type="password"],
+  .container form input[type="email"] {
+    width: 100%;
+    max-width: 315px;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .container form .check {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container form .text_conf {
+    margin-left: 0;
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+  }
+
+  .container form .check p {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .container form input[type="submit"] {
+    width: 100%;
+    max-width: 250px;
+    margin-left: 0;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 1% 5%;
+  }
+}

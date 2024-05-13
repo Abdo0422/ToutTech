@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.sidebar {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+  float: left;
+}
+
+
+.sidebar ul li a.active {
+  font-weight: 800;
+  color: #333;
+}
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+  color: #666;
+}
+
+.content {
+  margin-left: 20px;
+  width: 350px;
+  border: none;
+  border-radius: 15px;
+  background-color: #c9c9c9;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+}
+
+.content h2 {
+  font-size: 1.5em;
+}
+
+.content h3 {
+  margin-top: 20px;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+.content ul li a {
+  text-decoration: none;
+  color: #0066cc;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.content ul li a:hover {
+  color: #0099ff;
+}
+.container button{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 150px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  color: #0066cc;
+  font-size: 13px;
+  transition: color 0.3s;
+  cursor: pointer;
+  text-align: start;
+}
+.container button:hover{
+  color: #0099ff;
+}
