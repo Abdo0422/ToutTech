@@ -33,6 +33,10 @@ Assurez-vous d'avoir installé les éléments suivants avant de démarrer le pro
 
 Une fois l'application et JSON Server démarrés, ouvrez votre navigateur et accédez à ``http://localhost:4200`` pour utiliser l'application TouTech. Vous pouvez parcourir les produits, effectuer des achats, et gérer votre compte utilisateur.
 
+## Site Web
+
+Vous pouvez accéder au site web [ici](https://abdo0422.github.io/ToutTech/).
+
 ## Contribution
 
 Les contributions sont les bienvenues! Si vous souhaitez contribuer à ce projet, veuillez soumettre une pull request avec vos modifications.
@@ -40,8 +44,6 @@ Les contributions sont les bienvenues! Si vous souhaitez contribuer à ce projet
 ## Auteur
 
 Ce projet a été développé par Abderrahmane Loubachi et Akram Naji.
-
-
 
 ---
 
