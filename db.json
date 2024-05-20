@@ -1,107 +1,20 @@
 {
   "processPayment": [
-    {
-      "id": "723f",
-      "cardNumber": "5275278578578878",
-      "expiryDate": "12/25",
-      "cvv": "123"
-    },
-    {
-      "id": "4d89",
-      "cardNumber": "4234568524245325",
-      "expiryDate": "12/25",
-      "cvv": "123"
-    }
+   
   ],
   "orders": [
-    {
-      "id": "1713567014706",
-      "userId": "1713538656950",
-      "userName": "abderrahmane loubachi",
-      "userEmail": "mylifeasabdo@gmail.com",
-      "address": "157 LT LOTS AGDAL 1S M ETG RD APPT 1\nCASABLANCA",
-      "phoneNumber": "+212643449779",
-      "city": "CASABLANCA",
-      "country": "Maroc",
-      "cartItems": [
-        {
-          "id": "1713566995641",
-          "product_id": 3,
-          "name": "iPhone 13",
-          "price": 999,
-          "quantity": 3,
-          "image": "https://th.bing.com/th/id/OIP.2JfREDFMX96VodMXgG5zgAHaKE?rs=1&pid=ImgDetMain",
-          "user_id": "1713538656950"
-        }
-      ],
-      "paymentMethod": "",
-      "paymentDetails": null
-    },
-    {
-      "id": "1713567146889",
-      "userId": 1713567128146,
-      "userName": "aaaaaaaaaaaaa",
-      "userEmail": "abderrahmanelouybachi@gmail.com",
-      "address": "157 LT LOTS AGDAL 1S M ETG RD APPT 1\nCASABLANCA",
-      "phoneNumber": "+212643449779",
-      "city": "CASABLANCA",
-      "country": "Maroc",
-      "cartItems": [
-        {
-          "id": "1713567135464",
-          "product_id": 7,
-          "name": "Alienware Aurora",
-          "price": 1999,
-          "quantity": 2,
-          "image": "https://blogs.windows.com/wp-content/uploads/prod/sites/2/2019/08/36ae35d8ad1302d45f1452c64bd63fe3.jpg",
-          "user_id": 1713567128146
-        }
-      ],
-      "paymentMethod": "",
-      "paymentDetails": null
-    }
+    
   ],
   "cartitems": [
-    {
-      "id": "1713517477486",
-      "product_id": 2,
-      "name": "Boîtier de Disque Dur Externe 2.5″HDD",
-      "price": 69,
-      "quantity": 1,
-      "image": "https://electro-market.ma/wp-content/uploads/2023/04/site-34-700x700.jpg",
-      "user_id": "1713486926242"
-    },
-    {
-      "id": "1713535174767",
-      "product_id": 12,
-      "name": "Phone Cases",
-      "price": 19.99,
-      "quantity": 2,
-      "image": "https://th.bing.com/th/id/OIP.ow57B6OlD6bkuKyIAbbMmAHaHZ?rs=1&pid=ImgDetMain",
-      "user_id": "1713525483721"
-    }
+    
   ],
   "users": [
-    {
-      "id": "1713538656950",
-      "username": "abderrahmane loubachi",
-      "email": "mylifeasabdo@gmail.com",
-      "password": "12345678",
-      "role": 1
-    },
     {
       "id": "1713566407793",
       "username": "azzaza",
       "email": "jean@email.com",
       "password": "12345678",
-      "role": 0
-    },
-    {
-      "id": "1713567128146",
-      "username": "aaaaaaaaaaaaa",
-      "email": "abderrahmanelouybachi@gmail.com",
-      "password": "12345678",
-      "role": 0
+      "role": 1
     }
   ],
   "electronics": [
