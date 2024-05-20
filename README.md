@@ -1,7 +1,3 @@
-Sure, here's a simplified version:
-
----
-
 # Welcome to ToutTech!
 
 This is the source code repository for ToutTech Electronics, your one-stop shop for all things tech! Browse our wide selection of electronic products and enjoy a seamless shopping experience.
